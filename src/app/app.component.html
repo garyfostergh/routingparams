@@ -1,4 +1,6 @@
 <h1>
   {{title}}
 </h1>
+<button routerLink="display">Display 1</button>
+<button [routerLink]="['display', { foo: 'bar', name: 'Duane' }]">Display 2 </button>
 <router-outlet></router-outlet>
